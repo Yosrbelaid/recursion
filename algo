@@ -1,0 +1,44 @@
+
+FUNCTION check(year)
+BEGIN
+    IF (year%4==0 or year%400==0) THEN
+        return(year , "is a leap year")
+    ELSE
+        return(year ,"is not a leap year")
+    END_IF
+END
+FUNCTION price(age)
+BEGIN
+    IF (age<=12) THEN
+        return "12$"
+    ELSE_IF (13<=age<=17) THEN
+        return "15$"
+    ELSE
+        return "20$"
+    END_IF
+END
+
+FUNCTION power(x,n)
+BEGIN
+    IF (n=0) THEN
+        return 1
+    ELSE
+        return x * power(x,n-1)
+END
+
+FUNCTION fibbonacci(n)
+BEGIN
+IF (n=0) THEN
+    return 0
+
+ELSE_IF (n=1) THEN
+
+   return 1
+
+ELSE
+
+    return fibbonacci(n-1) + fibbonacci(n-2)
+
+END_IF
+
+END
